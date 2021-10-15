@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+}
+header{
+    background-color: aquamarine;
+}
+.card{
+    background-color: rgb(141, 138, 138);
+    width: 80%;
+    margin: 15px auto 10px auto;
+    padding: 5px;
+}
+
+.footer{
+    background-color: rgb(115, 161, 115);
+    text-align: center;
+    padding: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*FORMULARIO*/
+form {
+	padding: 50px 20px;
+	background-color: #ededed;
+    width: 85%;
+    margin: 70px auto 30px auto;
+	padding-top: 28px;    
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: #444
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+input[type='submit']{
+	background-color: #48e;
+	color: #fff;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
