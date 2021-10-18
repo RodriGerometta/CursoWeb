@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Arrepentimiento</title>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">Start Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi-cart-fill me-1"></i>
+              Cart
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+          <!-- <h1 class="display-4 fw-bolder">Me arrepenti de la compra</h1> -->
+          <!-- <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p> -->
+        </div>
+      </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <form class="form" method="post" action="insertar.php">
+                  <fieldset>
+                    <legend class="text-center header">
+                      Me arrepenti de la compra
+                    </legend>
+                    <!-- Nombre -->
+                    <div class="form-group center">
+                      <div class="col-md-12">
+                        <input
+                          id="fnombre"
+                          name="nombre"
+                          type="text"
+                          placeholder="Nombre"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- Apellido -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <input
+                          id="fapellido"
+                          name="apellido"
+                          type="text"
+                          placeholder="Apellido"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- DNI -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <input
+                          id="fdni"
+                          name="dni"
+                          type="number"
+                          placeholder="DNI"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <input
+                          id="femail"
+                          name="email"
+                          type="email"
+                          placeholder="Correo Electronico"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- tel -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <input
+                          id="ftel"
+                          name="celular"
+                          type="tel"
+                          placeholder="Celular"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- Número de Orden -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <input
+                          id="forden"
+                          name="orden"
+                          type="number"
+                          placeholder="Numero de orden"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- Motivo de la revocación de la compra -->
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          placeholder="Motivo de la revocacion de la compra"
+                          rows="7"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!-- Boton enviar -->
+                    <div class="form-group">
+                      <div class="col-md-12 text-center">
+                        <button
+                          type="submit"
+                          name="enviar"
+                          class="btn btn-dark btn-lg"
+                        >
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

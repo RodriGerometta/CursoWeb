@@ -21,7 +21,8 @@
     </form>
 
     <!--Incluyo el archivo PHP-->
-    <?php include("registrar.php");
-        ?>
+    <?php 
+        include("registrar.php");
+    ?>
 </body>
 </html>
